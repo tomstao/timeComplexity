@@ -47,7 +47,7 @@ public class SortTestArrayGenerator {
         System.out.println("Sorting completed--------------------------------");
         timePerformance("insertionSort", testArray2);
         System.out.println("Sorting completed--------------------------------");
-        timePerformance("mergesort", testArray3);
+        timePerformance("mergeSort", testArray3);
 //        timePerformance("insertionSort", testArray);
 //        timePerformance("mergeSort", testArray);
 
