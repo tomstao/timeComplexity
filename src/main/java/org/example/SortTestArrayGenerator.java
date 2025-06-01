@@ -51,18 +51,6 @@ public class SortTestArrayGenerator {
 //        timePerformance("insertionSort", testArray);
 //        timePerformance("mergeSort", testArray);
 
-        System.out.print("First 10 elements: ");
-        for (int i = 0; i < 10; i++) {
-            assert testArray1 != null;
-            System.out.print(testArray1[i] + " ");
-        }
-        System.out.println();
-
-        System.out.print("Last 10 elements: ");
-        for (int i = Math.max(0, testArray1.length - 10); i < testArray1.length; i++) {
-            System.out.print(testArray1[i] + " ");
-        }
-        System.out.println();
 
     }
 
@@ -86,5 +74,18 @@ public class SortTestArrayGenerator {
         long endTime = System.nanoTime();
         System.out.println("Time for " + methodName + ": " + (endTime - startTime) + " ns");
 
+
+        System.out.print("First 10 elements: ");
+        for (int i = 0; i < 10; i++) {
+            assert testArray != null;
+            System.out.print(testArray[i] + " ");
+        }
+        System.out.println();
+
+        System.out.print("Last 10 elements: ");
+        for (int i = Math.max(0, testArray.length - 10); i < testArray.length; i++) {
+            System.out.print(testArray[i] + " ");
+        }
+        System.out.println();
     }
 }
