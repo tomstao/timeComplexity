@@ -28,28 +28,14 @@ public class SortTestArrayGenerator {
         int[] testArray1 = DataLoader.loadNumbersFromFile(filePath, expectedNumberOfIntegers);
         int[] testArray2 = DataLoader.loadNumbersFromFile(filePath, expectedNumberOfIntegers);
         int[] testArray3 = DataLoader.loadNumbersFromFile(filePath, expectedNumberOfIntegers);
-//        int arraySize = 1_000_000; // 10^6
-//        int arraySize = 1_000_000;
-//        int numberUpperBound = 100;
 
-//        System.out.println("Generating an array of " + arraySize +
-//                " integers, with each integer < " + numberUpperBound + "...");
-//        int[] testArray = generateArrayForSorting(arraySize, numberUpperBound);
         System.out.println("Array generated.");
-//        long startTime = System.nanoTime();
-
-//        long endTime = System.nanoTime();
-//        BubbleSort.bubbleSort(testArray);
-//        long durationMs = (endTime - startTime) / 1_000_000;
-//        System.out.println("Bubble sort completed in " + durationMs + " ms.");
 
         timePerformance("bubbleSort", testArray1);
         System.out.println("Sorting completed--------------------------------");
         timePerformance("insertionSort", testArray2);
         System.out.println("Sorting completed--------------------------------");
         timePerformance("mergeSort", testArray3);
-//        timePerformance("insertionSort", testArray);
-//        timePerformance("mergeSort", testArray);
 
 
     }
