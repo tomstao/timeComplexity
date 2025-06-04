@@ -1,25 +1,8 @@
 package org.example;
 
-import java.util.Random;
 
 public class SortTestArrayGenerator {
 
-    public static int[] generateArrayForSorting(int size, int upperBound) {
-        if (size <= 0) {
-            throw new IllegalArgumentException("Array size must be positive.");
-        }
-        if (upperBound <= 0) {
-            throw new IllegalArgumentException("Upper bound must be positive.");
-        }
-
-        int[] arr = new int[size];
-        Random random = new Random();
-
-        for (int i = 0; i < size; i++) {
-            arr[i] = random.nextInt(upperBound);
-        }
-        return arr;
-    }
 
     public static void main(String[] args) {
         String filePath = "src/numbers_1M.txt";
